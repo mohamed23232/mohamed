@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+header{
+    width: 100%;
+    background-color: #480abb;
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
+}
+.logo{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: #ff00bb;
+}
+.navigation a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-transform: capitalize;
+    color: #ff00bb;
+    padding-left: 30px;
+}
+.navigation a:hover{
+    color: orange;
+}
+
+section{
+    padding: 100px 200px;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(/images/main-background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2{
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+    font-weight: 500;
+}
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color: #c537a0;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.main h3{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.project-btn{
+    color: #fff;
+    background-color: #c537a0;
+    padding: 0.92em 2.12em;
+    border-radius: 15px;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 40px;
+    transition: 1s ease;
+}
+
+.project-btn:hover{
+    background-color: #fa2ec3;
+    transform: scale(1.1);
+}
+
+.icon-sec a{
+color: #fff;
+font-size: 1.8em;
+font-weight: 200;
+padding-right: 30px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: #c537a0;
+    font-size: 2.2em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: #fff;
+    width: 21.24em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    padding: 25px;
+    margin: 15px;
+    transition: 1s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+    cursor: crosshair;
+}
+
+.icon{
+    text-align: center;
+    color: #fa2ec3;
+    font-size: 7em;
+    margin-bottom: 5px;
+}
+
+.info{
+    text-align: center;
+}
+.card .info h3{
+    color: #fa2ec3;
+    font-weight: 600;
+    font-size: 1.7em;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+
+.projects{
+   /* background-image: linear-gradient(to right,#070159,#00001c);*/
+   background: url(/images/main-background.jpg) no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+}
+
+
+.project-img img{
+    width: 100%;
+}
+
+.project-card{
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #fa2ec3;
+    border-radius: 10px;
+    min-height: 14em;
+    width: 20em;
+    overflow: hidden;
+    transition: 0.5s ease;
+    margin: 15px;
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+.project-card:hover .project-img{
+    opacity: 0.9;
+}
+.project-info{
+    margin-bottom: 10px;
+    margin-top: 8px;
+}
+.project-catagory{
+    margin-bottom: 10px;
+    padding-left:10px;
+}
+
+strong{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+strong a{
+    text-decoration: none;
+    color: #c537a0;
+}
+strong a:hover{
+    color: #ff717c;
+}
+
+.contact .icon{
+    font-size: 4.5em;
+}
+
+.contact .info h3{
+    color: black;
+}
+
+.contact .info p{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+footer{
+    background-color: #340144;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2em;
+}
+.footer-icon a{
+    color: #fff;
+    margin-left: 12px;
+    font-size: 1.5em;
+}
+footer p span{
+    color: orange;
+}
+
+@media(max-width:1500px){
+    section{
+        padding: 100px 100px;
+    }
+    #services .card{
+        width: 18em;
+    }
+}
+
+@media(max-width:1310px){
+    header{
+        padding: 10px 100px;
+    }
+    section{
+        padding: 100px 100px;
+    }
+    #services .card{
+        width: 15em;
+    }
+}
+@media(max-width:1070px){
+    body{
+        font-size: 14px;
+    }
+
+    header{
+        padding: 10px 50px;
+    }
+    section{
+        padding: 10px 90px;
+    }
+    #services .card{
+        width: 15em;
+    }
+}
+@media(max-width:1020px){
+    body{
+        font-size: 14px;
+    }
+    section{
+        padding: 10px 100px;
+    }
+    #services .card{
+        width: 15em;
+        padding: 15px;
+        margin: 5px;
+    }
+}
+@media(max-width:860px){
+    body{
+        font-size: 14px;
+    }
+    header{
+        padding: 10px 50px;
+    }
+    section{
+        padding: 10px 50px;
+    }
+}
+@media(max-width:762px){
+    body{
+        font-size: 13px;
+    }
+    header{
+        padding: 10px 50px;
+    }
+    section{
+        padding: 10px 10px;
+    }
+}
+
+
+@media(max-width:647px){
+    body{
+        font-size: 13px;
+    }
+    header{
+        padding: 10px 30px;
+    }
+    section{
+        padding: 100px 60px;
+    }
+    .project-card{
+        width: 15em;
+        margin: 10px;
+    }
+    #contact .card{
+        width: 15em;
+    }
+    .contact .info p{
+        font-size: 0.7em;
+    }
+}
+
+@media(max-width:550px){
+    body{
+        font-size: 13px;
+    }
+    section{
+        padding: 100px 40px;
+    }
+
+}
+@media(max-width:460px){
+    body{
+        font-size: 12px;
+    }
+    header{
+        padding: 5px 10px;
+    }
+    section{
+        padding: 100px 30px ;
+    }
+    .main h2 span{
+        font-size: 2em;
+    }
+}
+@media(max-width:400px){
+    body{
+        font-size: 10px;
+    }
+    header{
+        padding: 5px 5px;
+    }
+    .project-card{
+        width: 14em;
+        margin: 8px;
+    }
+    #contact .card{
+        width: 20em;
+    }
+    .contact .info p{
+        font-size: 1em;
+    }
+}
+
+@media(max-width:290px){
+    body{
+        font-size: 8px;
+    }
+    header{
+        font-size: 0.9em;
+        padding: 5px 10px;
+    }
+}
+
+
